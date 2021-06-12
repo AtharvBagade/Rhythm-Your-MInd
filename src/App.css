@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  height: 768px;
+  width: 100%;
+  position: relative;
+  background-color: #D36969 ;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.logo {
+  font-family: Bradley Hand ITC;
+  padding: 10px;
+  font-size: 1.85rem;
+}
+
+nav {
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
+  position: static;
+  left: 0;
+  right: 0;
+  width: 95%;
+  z-index: 1;
+  background-color: #ffffff;
+  user-select: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  height: 60px;
+  line-height: 60px;
+  margin: 4px;
+  padding: 0px 20px;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: none;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  transition: 0.4s ease-in-out;
+}
+
+.hey {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: none;
+  font-weight: 500;
+}
+
+nav ul li:hover {
+  background-color: #D36969;
+  color: #fff;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.menu-icon {
+  display: none;
+}
+.container1{
+
+  width: 100%;
+  height:500px;
+ 
+  }
+   
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.profile{
+  line-height: 0.2rem;
+  text-align: center; 
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 14rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+.profile img{
+
+  border: 2px white solid;
+  box-shadow:15px 10px rgba(0, 0, 0, 0.5);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro
+{
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color:white;
+}
+
+.intro-2
+{
+  font-size: 1rem;
+  font-weight: 300;
+ color: white;
+  opacity: 0.9;
+}
+
+.container2
+{
+  height:120rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border-radius: 10rem;
+  background-image: url('./components/Backimg.jpg');
+  background-size: cover;
 }
